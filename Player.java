@@ -1,24 +1,60 @@
 /*
  *
- * @author
+ * @Laila Player
  */
+import java.util.Random;
+import java.util.Scanner;
 public class Player {
 	// INSTANCE DATA: name, wins, losses
 
 	//CONSTRUCTOR
-	public Player(String playerName)
-	{
+
+	private String name;
+
+	private int wins;
+
+	private int loss;
+	public Player(String name) {
+		this.name = name;
+
+		wins = 0;
+
+		loss = 0;
+
 	}
 
-	// METHODS
-	// getName(), setName(), getWins(), getLosses(), toString(), etc
-	public String getName()
-	{
-		return null;
+
+	public void incrementWins() {
+
+		wins++;
+
 	}
 
-	public String toString()
-	{
-		return null;
+
+	public void incrementLoss() {
+
+		loss++;
+
+	}
+
+
+	public int getWins() {
+
+		return wins;
+
+	}
+
+
+	public int getLoss() {
+
+		return loss;
+
+	}
+
+
+	public String getName() {
+
+		return name;
+
 	}
 }
